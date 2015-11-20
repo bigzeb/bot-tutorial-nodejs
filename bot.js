@@ -53,18 +53,4 @@ function postMessage() {
   botReq.end(JSON.stringify(body));
 }
 
-function respond() {
-  var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/carr$/;
-
-  if(request.text && botRegex.test(request.text)) {
-    this.{
-  "bot_id"  : "b0c244455c5aed2c47fb32df4b",
-  "text"    : "beep beep (he's a car)",
-    }
-  ]
-}
-}
-
-
 exports.respond = respond;
